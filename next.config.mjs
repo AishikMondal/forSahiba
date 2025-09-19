@@ -11,8 +11,8 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  basePath: '/forSahiba',
-  assetPrefix: '/forSahiba',
+  basePath: process.env.NODE_ENV === 'production' ? '/forSahiba' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/forSahiba/' : '',
   distDir: 'out',
 }
 
