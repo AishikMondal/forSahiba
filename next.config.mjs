@@ -13,6 +13,7 @@ const nextConfig = {
   trailingSlash: true,
   basePath: '/forSahiba',
   assetPrefix: '/forSahiba',
+  distDir: 'out',
 }
 
 export default nextConfig
